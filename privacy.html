@@ -22,7 +22,7 @@ a:hover { text-decoration: underline; }
 <body>
 <div class="container">
 <h1>Privacy Policy</h1>
-<p class="updated">Effective date: February 27, 2026</p>
+<p class="updated">Effective date: March 11, 2026</p>
 
 <p>Arkiary ("the App") is a journaling application developed by Ark Liu ("we," "us," or "our"). Your privacy matters to us, and this policy explains how we collect, use, and protect your information.</p>
 
@@ -40,8 +40,8 @@ a:hover { text-decoration: underline; }
 <h2>2. How We Use Your Information</h2>
 <ul>
 <li><strong>Core functionality:</strong> To store, organize, and display your journal entries.</li>
-<li><strong>AI analysis:</strong> Select entries and chat messages are sent to the OpenAI API to power features such as mood insights, reflections, and the AI companion. OpenAI does not permanently store your data and processes it according to their <a href="https://openai.com/policies/api-data-usage-policies" target="_blank">API data usage policy</a>.</li>
-<li><strong>Cloud sync:</strong> If you sign in, your data is synced via Google Firebase (Authentication and Cloud Firestore) so you can access it across devices.</li>
+<li><strong>AI analysis:</strong> Select entries and chat messages are sent to AI service providers to power features such as mood insights, reflections, and the AI companion. Depending on your region, data may be processed by <strong>OpenAI</strong> (for users outside mainland China) or <strong>DeepSeek</strong> (for users in mainland China, Hong Kong, and Macau). Neither provider permanently stores your data. See their respective policies: <a href="https://openai.com/policies/api-data-usage-policies" target="_blank">OpenAI API Data Usage Policy</a>, <a href="https://www.deepseek.com/privacy" target="_blank">DeepSeek Privacy Policy</a>.</li>
+<li><strong>Cloud sync:</strong> If you sign in, your data is synced via Google Firebase (Authentication and Cloud Firestore) so you can access it across devices. For users in regions where Google services are restricted, requests may be routed through a Cloudflare-hosted proxy to ensure connectivity. The proxy does not store any user data.</li>
 <li><strong>Weather &amp; location tagging:</strong> If you grant location permission, we use your location to fetch weather data and tag entries.</li>
 </ul>
 
@@ -51,8 +51,10 @@ a:hover { text-decoration: underline; }
 <h2>4. Data Sharing</h2>
 <p>We do not sell, rent, or share your personal data with third parties. We do not serve advertisements. Your data is only transmitted to:</p>
 <ul>
-<li><strong>OpenAI</strong> — for AI-powered features (processing only, no permanent storage)</li>
+<li><strong>OpenAI</strong> — for AI-powered features outside mainland China (processing only, no permanent storage)</li>
+<li><strong>DeepSeek</strong> — for AI-powered features in mainland China, Hong Kong, and Macau (processing only, no permanent storage)</li>
 <li><strong>Google Firebase</strong> — for authentication and cloud sync (if signed in)</li>
+<li><strong>Cloudflare</strong> — as a network proxy for users in regions with restricted access to Google services (no data storage)</li>
 </ul>
 
 <h2>5. Your Rights &amp; Data Deletion</h2>
